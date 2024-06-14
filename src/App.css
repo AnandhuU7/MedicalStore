@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  text-align:center;
 }
 
 .App-logo {
@@ -35,4 +41,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Add styles for the marquee container and content */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  animation: marquee 20s linear infinite;
+  color: red; /* Adjust the duration as needed */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+ }
+ .navbar-nav .nav-link:hover {
+  color: grey !important; /* Change color to grey on hover */
 }
